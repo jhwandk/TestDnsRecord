@@ -7,7 +7,7 @@ $dnsServerIP = "127.0.0.1"  # Replace with your DNS server IP address
 $dnsZones = Get-DnsServerZone -ComputerName $dnsServerIP
 
 # Choose a specific DNS zone to test
-$selectedZone = "res.net"
+$selectedZone = "example.net"
 
 # Get all DNS records from the specified zone
 $dnsRecords = Get-DnsServerResourceRecord -ZoneName $selectedZone -ComputerName $dnsServerIP
